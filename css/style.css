@@ -1,0 +1,372 @@
+@font-face {
+  font-family: milkshake;
+  src: url(../fonts/Milkshake.ttf);
+}
+
+/* General Styling */
+
+html {
+  font-size: 100%;
+  font-family: "B612", sans-serif;
+}
+
+body {
+  background-color: #dbecec;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: milkshake;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 3rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-family: milkshake;
+  margin: 0;
+  line-height: 1.875rem;
+  color: #dbecec;
+  font-weight: 100;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #dbecec;
+  font-size: 1rem;
+}
+
+svg {
+  height: 22px;
+  width: 22px;
+}
+
+header > a > svg {
+  height: 30px;
+  width: auto;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+/* Header Styling */
+
+header {
+  padding: 16px 22px;
+  background-color: rgb(23, 22, 22);
+  position: relative;
+}
+
+/* Nav Styling */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(23, 22, 22);
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu {
+  position: absolute;
+  padding: 16px 0 130px 16px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgb(23, 22, 22);
+  display: none;
+}
+
+.menu li {
+  margin-bottom: 16px;
+}
+
+.menu a:hover,
+.menu a:active {
+  font-style: italic;
+}
+
+.menu-divider {
+  position: absolute;
+  top: 210px;
+  border: 1px solid rgb(111, 106, 94);
+  z-index: 10;
+  width: 80%;
+  display: none;
+}
+
+.buttons {
+  display: none;
+  position: absolute;
+  top: 250px;
+  z-index: 10;
+}
+
+.buttons li {
+  display: inline;
+}
+
+.buttons a {
+  border: 1px solid #dbecec;
+  padding: 10px;
+}
+
+.buttons a:hover,
+.buttons a:active {
+  background-color: #dbecec;
+  color: rgb(23, 22, 22);
+}
+
+.buttons a:first-child {
+  margin-right: 16px;
+}
+
+/* Banner */
+
+.banner {
+  background-image: url("../img/banner.webp");
+  height: 486px;
+  background-size: cover;
+  background-position: bottom center;
+  padding: 45px 16px 16px 16px;
+  position: relative;
+}
+
+.banner section {
+  background-color: #dbecec;
+  max-width: 500px;
+  height: 441px;
+  min-height: 430px;
+  text-align: center;
+  padding: 55px 27px;
+  margin: 0 auto;
+}
+
+.banner h2 {
+  font-family: milkshake;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+hr {
+  width: 1.5rem;
+  margin: 0 auto;
+  border: 1px solid #c6552c;
+  margin-top: 0.5rem;
+}
+
+.banner p {
+  max-width: 370px;
+  margin: 1rem auto;
+}
+
+/* Main */
+
+/* Articles Section */
+
+main section:first-child {
+  background-color: rgb(23, 22, 22);
+  padding: 70px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+main section:first-child div {
+  flex-basis: 450px;
+}
+
+main section h2 {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c6552c;
+}
+
+main section p {
+  color: #dbecec;
+}
+
+main section:first-child p {
+  margin: 32px 0 22px 0;
+}
+
+main section:first-child a {
+  border-top: 1px solid #dbecec;
+  border-bottom: 1px solid #dbecec;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+main section:first-child a:hover,
+main section:first-child a:active {
+  background-color: #dbecec;
+  color: rgb(23, 22, 22);
+}
+
+/* Guides Section */
+
+main section:last-child {
+  padding: 110px 0px 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main section:last-child > div {
+  position: relative;
+}
+
+main section:last-child > div > div {
+  background-color: rgb(23, 22, 22);
+  padding: 16px;
+  width: 90%;
+  max-width: 500px;
+  position: absolute;
+  left: 5%;
+  top: -10%;
+}
+
+main section:last-child a {
+  color: rgb(23, 22, 22);
+  border-top: 1px solid #c6552c;
+  border-bottom: 1px solid #c6552c;
+  padding: 10px;
+  display: inline-block;
+  margin: 24px 0 0 -16px;
+}
+
+main section:last-child a:hover,
+main section:last-child a:active {
+  background-color: #c6552c;
+  color: #dbecec;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(28, 28, 26);
+  padding: 30px;
+}
+
+footer h2 {
+  font-size: 3rem;
+  color: rgb(23, 24, 22);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-weight: 900;
+  line-height: 5rem;
+  word-spacing: 100vw;
+}
+
+footer p {
+  color: #dbecec;
+  font-size: 0.8rem;
+}
+
+/* Large Screen Styling */
+
+@media (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    position: static;
+    align-content: flex-end;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+
+  .buttons {
+    position: static;
+    display: flex !important;
+  }
+
+  nav ul:last-child {
+    padding: 0;
+  }
+
+  .banner section {
+    height: auto;
+    min-height: auto;
+    position: absolute;
+    right: 50%;
+    top: 30%;
+  }
+
+  main section:first-child {
+    justify-content: flex-start;
+    padding-left: 52%;
+  }
+
+  main section:last-child {
+    justify-content: flex-start;
+  }
+
+  main section:last-child > div {
+    justify-content: space-between;
+    padding: 110px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  main section:last-child > div > div {
+    position: absolute;
+    top: 13.6%;
+    left: 15%;
+  }
+
+  main section:last-child > div > ul {
+    align-self: center;
+    margin-left: 60px;
+  }
+
+  footer h2 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+
+/* Removing Padding At Container Size */
+
+@media (min-width: 1200px) {
+  nav,
+  .banner,
+  main section,
+  main section > div,
+  footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
